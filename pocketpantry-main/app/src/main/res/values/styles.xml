@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="list_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/size_list_image</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:paddingStart">12dp</item>
+    </style>
+
+    <style name="list_text.title">
+        <item name="layout_constraintVertical_bias">.1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="list_text.sub">
+        <item name="layout_constraintVertical_bias">.9</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="list_image">
+        <item name="android:layout_width">@dimen/size_list_image</item>
+        <item name="android:layout_height">@dimen/size_list_image</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintBottom_toBottomOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:background">@color/white</item>
+<!--        <item name="android:layout_margin">2dp</item>-->
+    </style>
+    
+    <style name="sv_primary">
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:editTextBackground">@color/primaryDarkColor</item>
+    </style>
+
+    <style name="sr_title_text">
+        <item name="android:textSize">@dimen/recipe_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/source_sans_pro_bold</item>
+    </style>
+
+    <style name="sr_subtitle_text">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="android:elevation">20dp</item>
+    </style>
+
+    <style name="CardView.Light">
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="CardView.Dark">
+        <item name="android:backgroundTint">#303030</item>
+    </style>
+
+    <style name="SearchView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:padding">10dp</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+
+    <style name="SearchView.Light">
+        <item name="android:background">#FFFFFF</item>
+    </style>
+
+    <style name="SearchView.Dark">
+        <item name="android:background">@drawable/background_search_view</item>
+    </style>
+
+</resources>

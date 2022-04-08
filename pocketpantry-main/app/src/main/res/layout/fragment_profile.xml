@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/profile_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054"
+        />
+
+    <Button
+        android:id="@+id/profile_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Search Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/profile_log_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/profile_chipGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:isScrollContainer="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        app:chipIcon="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_profile_instructions"
+        >
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/keto_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Keto Only"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_grain_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Grain"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/vegan_only_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Vegan Only"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_wheat_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Wheat"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_nuts_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:buttonTint="#FFFFFF"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Nuts"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_peanut_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Peanuts"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/sulfite_free_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Sulfite Free"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_tree_nut_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Tree Nuts"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/dairy_free_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Dairy Free"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_soy_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Soy"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_shellfish_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Shellfish"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_seafood_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Seafood"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_sesame_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Sesame"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:checkedIcon="@drawable/cheesy_potatoes"
+            app:chipIcon="@drawable/common_google_signin_btn_icon_dark"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/vegetarian_only_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Vegetarian Only"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/paleo_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Paleo"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/gluten_free_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="Gluten Free"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/no_egg_chip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/chip_colors"
+            android:checkable="true"
+            android:fontFamily="@font/rubik"
+            android:hapticFeedbackEnabled="true"
+            android:text="No Egg"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:chipIcon="@drawable/ic_add"
+            />
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <TextView
+        android:id="@+id/text_profile_instructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:text="Options highlighted in green will be applied to your searches. Click on one to try it!"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_title_text"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints"
+    >
+
+    <data>
+        <variable
+            name="result"
+            type="com.revature.pocketpantry.model.IngredientResult" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:elevation="@dimen/mar_med"
+        android:layout_margin="@dimen/mar_xs"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivPantry"
+                style="@style/list_image"
+                android:contentDescription="image of ingredient"
+                app:imageUrl="@{result.imageUrl}"
+                tools:src="@tools:sample/backgrounds/scenic" />
+
+            <TextView
+                android:id="@+id/tvPantry"
+                style="@style/list_text.title"
+                app:layout_constraintVertical_bias="@null"
+                android:text="@{result.name}"
+                />
+
+            <TextView
+                android:id="@+id/tvPantryQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tvPantry"
+
+                tools:text="3 oz" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

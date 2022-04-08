@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PocketPantry</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="test_recipe">1)1 green onion, thinly sliced \n2)1/4 cup milk \n3)2 lb. Yukon gold potatoes (about 5 medium), unpeeled, cubed \n4)2 oz. VELVEETAÂ®, cut up</string>
+    <string name="test_recipe_instructions">Place potatoes in large saucepan. \nAdd enough water to completely cover potatoes. \nBring to boil on medium-high heat. \nReduce heat to medium-low; simmer 15 min. or until potatoes are tender. \nDrain potatoes; return to saucepan. \nMash potatoes until light and fluffy, gradually adding milk alternately with the VELVEETA.Sprinkle with the onions.</string>
+    <string name="title_activity_navigation">Pocket Pantry</string>
+    <string name="title_home">Search</string>
+    <string name="title_dashboard">Appliances</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_nav_drawer_test">navDrawerTest</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_recipes_have_been_saved">No recipes have been favorited</string>
+    <string name="shopping_list_recipes">Shopping List Recipes</string>
+    <string name="no_shopping_list_available">No Shopping List Available</string>
+    <string name="add_to_shopping_list">Add to shopping list</string>
+    <string name="remove_from_favorites">Remove from favorites</string>
+    <string name="remove_from_shopping_list">Remove from shopping list</string>
+    <string name="add_to_favorites">Add to favorites</string>
+</resources>

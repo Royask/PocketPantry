@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "92771008517",
+    "project_id": "pocketpantry-35adb",
+    "storage_bucket": "pocketpantry-35adb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92771008517:android:ea5400a4161b3aab705c6c",
+        "android_client_info": {
+          "package_name": "com.revature.pocketpantry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "92771008517-lsgf1q48k62ftavvjg21psv7ci13vekr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS4XOSgKHXUnF-EgaCbDCkiVysqiieUsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "92771008517-lsgf1q48k62ftavvjg21psv7ci13vekr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

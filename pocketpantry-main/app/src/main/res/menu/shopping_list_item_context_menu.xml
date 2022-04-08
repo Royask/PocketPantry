@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/remove_from_shopping_list"
+        android:title="@string/remove_from_shopping_list">
+    </item>
+
+    <item
+        android:id="@+id/add_to_favorites"
+        android:title="@string/add_to_favorites">
+    </item>
+
+</menu>

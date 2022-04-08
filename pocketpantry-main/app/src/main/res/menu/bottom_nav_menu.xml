@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home_search"
+        android:icon="@drawable/ic_food_search"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_chef"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_Saved_Recipes"
+        android:icon="@drawable/ic_saved_recipe"
+        android:title="Saved Recipes"
+        />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_pantry"-->
+<!--        android:icon="@drawable/ic_fridge"-->
+<!--        android:title="Pantry"-->
+<!--        />-->
+
+    <item
+        android:id="@+id/navigation_shoppingList"
+        android:icon="@drawable/ic_groceries"
+        android:title="Grocery List"
+        />
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home_search">
+
+    <fragment
+        android:id="@+id/navigation_pantry"
+        android:name="com.revature.pocketpantry.pantry.Pantry"
+        android:label="My Pantry"
+        tools:layout="@layout/pantry_fragment"
+        />
+    <fragment
+        android:id="@+id/navigation_shoppingList"
+        android:name="com.revature.pocketpantry.shoppingList.ShoppingList"
+        android:label="My Shopping List"
+        tools:layout="@layout/shopping_list_fragment"
+        />
+    <fragment
+        android:id="@+id/navigation_Saved_Recipes"
+        android:name="com.revature.pocketpantry.savedRecipes.SavedRecipesFragment"
+        android:label="Saved Recipes"
+        >
+        <action
+            android:id="@+id/action_navigation_Saved_Recipes_to_selectedRecipeFragment"
+            app:destination="@id/selectedRecipeFragment"
+            app:popUpTo="@id/navigation_Saved_Recipes"
+            app:popUpToInclusive="false"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.revature.pocketpantry.profile.ProfileFragment"
+        android:label="Culinary Preferences"
+        tools:layout="@layout/fragment_profile"
+        >
+        <action
+            android:id="@+id/action_navigation_profile_to_navigation_home_search"
+            app:destination="@id/navigation_home_search"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedRecipeFragment"
+        android:name="com.revature.pocketpantry.selectedRecipe.SelectedRecipeFragment"
+        android:label="My Recipe"
+        >
+        <argument
+            android:name="recipeId"
+            app:argType="integer"
+            />
+        <action
+            android:id="@+id/action_selectedRecipeFragment_to_navigation_shoppingList"
+            app:destination="@id/navigation_shoppingList"
+            />
+    </fragment>
+    <action
+        android:id="@+id/action_global_navigation_Saved_Recipes"
+        app:popUpTo="@id/navigation_Saved_Recipes"
+        />
+    <fragment
+        android:id="@+id/appliancesFragment"
+        android:name="com.revature.pocketpantry.appliances.AppliancesFragment"
+        android:label="My Appliances"
+        />
+    <fragment
+        android:id="@+id/navigation_home_search"
+        android:name="com.revature.pocketpantry.homesearch.HomeSearch"
+        android:label="Recipe Search"
+        >
+        <action
+            android:id="@+id/action_navigation_home_search_to_selectedRecipeFragment"
+            app:destination="@id/selectedRecipeFragment"
+            />
+    </fragment>
+</navigation>
